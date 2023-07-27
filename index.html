@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JS -->
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div class="main-img">
+      <picture>
+        <source media="(min-width: 955px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="success">
+    </picture>
+    </div>
+    <div class="section2">
+      <div class="main-text">
+        <h1 class="title">Stay updated!</h1>
+        <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="./assets/images/icon-list.svg" alt="icon-list"><p>Product discovery and building what matters</p></li>
+          <li><img src="./assets/images/icon-list.svg" alt="icon-list"><p>Measuring to ensure updates are a success</p></li>
+          <li><img src="./assets/images/icon-list.svg" alt="icon-list"><p>And much more!</p></li>
+        </ul>
+      </div>
+      <!-- Sign-up form start -->
+      <form  onsubmit="subscribe()">
+        <div class="msgs">
+          <p>Email address</p>
+          <p class="error">Valid email required</p>
+        </div>
+        <input class="input" type="email" placeholder="email@company.com">
+        <button onclick="subscribe()">Subscribe to monthly newsletter</button>
+      </form>
+      <!-- Sign-up form end -->
+    </div>
+  </main>
+</body>
+</html>
