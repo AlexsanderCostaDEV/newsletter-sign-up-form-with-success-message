@@ -74,7 +74,11 @@ html, body {
         height: 500px;
         border-radius: 30px;
     }
-    .container .title {
-        font-size: 60px;
+    .container img {
+        margin: 0;
     }
+    .container .title {
+        font-size: 50px;
+    }
+
 }
